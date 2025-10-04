@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="description" content="CmentWala - Get today's best cement rates with GST included. Order online now!">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CmentWala">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <title>CmentWala - Today's Rates & Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>🏗️ CmentWala</h1>
+            <nav>
+                <a href="index.html" class="active">Today's Rates</a>
+                <a href="bank-terms.html">Bank & Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="rates-section">
+            <h2>Today's Cement Rates (Including GST)</h2>
+            <p class="update-date">Updated: <span id="currentDate"></span></p>
+
+            <div class="rates-grid">
+                <div class="rate-card">
+                    <div class="company-name">UltraTech</div>
+                    <div class="price">₹350<span>/bag</span></div>
+                    <div class="gst-info">GST Included</div>
+                </div>
+
+                <div class="rate-card">
+                    <div class="company-name">ACC</div>
+                    <div class="price">₹355<span>/bag</span></div>
+                    <div class="gst-info">GST Included</div>
+                </div>
+
+                <div class="rate-card">
+                    <div class="company-name">Ambuja</div>
+                    <div class="price">₹350<span>/bag</span></div>
+                    <div class="gst-info">GST Included</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">📞</div>
+                    <div class="details">
+                        <strong>Phone</strong>
+                        <p><a href="tel:+91 9823064024">+91 9823064024</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">✉️</div>
+                    <div class="details">
+                        <strong>Email</strong>
+                        <p><a href="mailto:cmentwala@gmail.com">cmentwala@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">📍</div>
+                    <div class="details">
+                        <strong>Address</strong>
+                        <p>Pooja Hardware,Dev Ram Nagar <br>Jalgaon, Maharashtra 425001/P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="https://wa.me/919823064024?text=Hello,%20I%20want%20to%20inquire%20about%20cement%20rates" class="whatsapp-btn" target="_blank">
+                    <span class="icon">💬</span> WhatsApp Us
+                </a>
+                <button class="chatbot-btn" onclick="toggleChatbot()">
+                    <span class="icon">🤖</span>
+                    Chat Support
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>Chat Support</h3>
+            <button class="close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-message">
+                <p>Hello! How can I help you today?</p>
+                <span class="timestamp">Just now</span>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userMessage" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CmentWala Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
