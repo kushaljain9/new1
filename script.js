@@ -83,7 +83,7 @@ function getBotResponse(message) {
     if (message.includes('price') || message.includes('rate') || message.includes('cost')) {
         return 'Our current rates are: UltraTech - ₹360/bag, ACC - ₹355/bag, Ambuja - ₹350/bag. All prices include GST.';
     } else if (message.includes('order') || message.includes('buy')) {
-        return 'To place an order, please contact us via WhatsApp or call us at +91 98765 43210. You can also visit our Bank & Terms page for payment details.';
+        return 'To place an order, please contact us via WhatsApp or call us at +91 9823064024. You can also visit our Bank & Terms page for payment details.';
     } else if (message.includes('payment') || message.includes('bank')) {
         return 'We accept only online payments. Please visit our Bank & Terms page for complete bank account details. All payments must be made to our official account only.';
     } else if (message.includes('delivery')) {
@@ -93,12 +93,12 @@ function getBotResponse(message) {
     } else if (message.includes('return') || message.includes('cancel')) {
         return 'Please note that once an order is placed and confirmed, it cannot be returned or cancelled. Please check our Terms & Conditions page for more details.';
     } else if (message.includes('contact') || message.includes('phone') || message.includes('email')) {
-        return 'You can reach us at: Phone: +91 98765 43210, Email: info@cementwala.com, or via WhatsApp for quick assistance.';
+        return 'You can reach us at: Phone: +91 9823064024, Email: info@Cemention.com, or via WhatsApp for quick assistance.';
     } else if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
         return 'Hello! How can I assist you today? You can ask me about cement rates, orders, payment details, or delivery information.';
     } else if (message.includes('thank') || message.includes('thanks')) {
         return 'You\'re welcome! If you have any other questions, feel free to ask.';
     } else {
-        return 'Thank you for your message! For specific queries, please contact us via WhatsApp at +91 98765 43210 or call us directly. Our team will be happy to assist you.';
+        return 'Thank you for your message! For specific queries, please contact us via WhatsApp at +91 9823064024 or call us directly. Our team will be happy to assist you.';
     }
 }
